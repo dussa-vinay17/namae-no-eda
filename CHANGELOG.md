@@ -1,5 +1,9 @@
 # Changelog
 
+## <small>0.0.2 (2025-09-23)</small>
+
+* chore: fix eslint config ([3b11e5c](https://github.com/dcdavidev/namae-no-eda/commit/3b11e5c))
+
 ## <small>0.0.1 (2025-09-23)</small>
 
 * chore: add @release-it/conventional-changelog ([d9abbba](https://github.com/dcdavidev/namae-no-eda/commit/d9abbba))
