@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.0 (2025-09-23)
+
+* feat: use action name ([33450f0](https://github.com/dcdavidev/namae-no-eda/commit/33450f0))
+
 ## <small>0.0.2 (2025-09-23)</small>
 
 * chore: fix eslint config ([3b11e5c](https://github.com/dcdavidev/namae-no-eda/commit/3b11e5c))
