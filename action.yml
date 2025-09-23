@@ -26,7 +26,7 @@ runs:
       with:
         fetch-depth: 0
 
-    - name: Run branch lint
+    - name: Run 'namae-no-eda'
       shell: bash
       env:
         INPUT_BRANCH_NAME: ${{ inputs.branch_name }}
