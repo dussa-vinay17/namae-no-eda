@@ -31,7 +31,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Validate branch name
-        uses: dcdavidev/namae-no-eda@v1.0.0
+        uses: dcdavidev/namae-no-eda@v0.0.1 # Check latest release first.
         with:
           allowed: 'fix/*,feature/*,release/*'
           exclude: 'main,develop'
