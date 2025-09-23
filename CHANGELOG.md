@@ -1,5 +1,9 @@
 # Changelog
 
+## <small>0.1.1 (2025-09-23)</small>
+
+* docs: add translation ([ff28758](https://github.com/dcdavidev/namae-no-eda/commit/ff28758))
+
 ## 0.1.0 (2025-09-23)
 
 * feat: use action name ([33450f0](https://github.com/dcdavidev/namae-no-eda/commit/33450f0))
