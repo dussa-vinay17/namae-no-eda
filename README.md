@@ -2,7 +2,7 @@
   <img alt='namae-no-eda logo' src='./assets/logo-shrk-cmpr.png' />
 </p>
 
-<h1 align='center'>namae-no-eda (名前の枝)</h1>
+<h1 align='center'>namae-no-eda (名前の枝, "branch name")</h1>
 <p align='center'>Keep your branch names tidy, like leaves on a tree</p>
 
 <p align='center'>
