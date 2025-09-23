@@ -34,4 +34,4 @@ runs:
         INPUT_EXCLUDE: ${{ inputs.exclude }}
       run: |
         set -euo pipefail
-        ./bin/namae-no-eda.sh
+        "$GITHUB_ACTION_PATH/bin/namae-no-eda.sh"
