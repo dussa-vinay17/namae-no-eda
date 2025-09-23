@@ -1,5 +1,9 @@
 # Changelog
 
+## <small>0.1.2 (2025-09-23)</small>
+
+* ci: edit action ([6f5a84e](https://github.com/dcdavidev/namae-no-eda/commit/6f5a84e))
+
 ## <small>0.1.1 (2025-09-23)</small>
 
 * docs: add translation ([ff28758](https://github.com/dcdavidev/namae-no-eda/commit/ff28758))
