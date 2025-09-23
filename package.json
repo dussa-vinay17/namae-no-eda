@@ -1,6 +1,6 @@
 {
   "name": "namae-no-eda",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Keep your branch names tidy, like leaves on a tree",
   "keywords": [
     "github-actions",
