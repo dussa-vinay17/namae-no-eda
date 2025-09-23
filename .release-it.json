@@ -4,13 +4,16 @@
     "commit": true,
     "commitMessage": "chore: release v${version}",
     "tag": true,
-    "push": true
+    "tagName": "v${version}",
+    "push": true,
+    "requireCleanWorkingDir": true,
+    "addUntrackedFiles": true
   },
   "github": {
     "release": true
   },
   "npm": {
-    "release": false,
+    "publish": false,
     "version": true
   },
   "plugins": {
