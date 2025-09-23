@@ -10,9 +10,16 @@
     "release": true
   },
   "npm": {
-    "publish": false
+    "release": false,
+    "version": true
   },
   "plugins": {
-    "@release-it/conventional-changelog": false
+    "@release-it/conventional-changelog": {
+      "infile": "CHANGELOG.md",
+      "header": "# Changelog",
+      "preset": {
+        "name": "conventionalcommits"
+      }
+    }
   }
 }
