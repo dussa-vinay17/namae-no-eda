@@ -19,14 +19,14 @@
     "url": "git+https://github.com/dcdavidev/namae-no-eda.git"
   },
   "license": "MIT",
+  "private": true,
   "author": "Davide Di Criscito <davidedc@outlook.com>",
-  "type": "module",
-  "main": "index.js",
   "scripts": {
     "commit": "cz",
     "lint": "eslint --fix .",
     "release": "release-it"
   },
+  "type": "module",
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
@@ -52,5 +52,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "engines": {
+    "node": ">=22.19.0"
   }
 }
