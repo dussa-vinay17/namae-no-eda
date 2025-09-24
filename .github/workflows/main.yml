@@ -19,18 +19,9 @@ jobs:
       - name: Run ShellCheck
         uses: ludeeus/action-shellcheck@2.0.0
 
-  shfmt:
-    runs-on: ubuntu-latest
-    needs: shellcheck
-    steps:
-      - uses: actions/checkout@v4
-      - uses: mfinelli/setup-shfmt@v4
-      - run: ls -R bin
-      - run: shfmt -w bin/*.sh
-
   tests:
     runs-on: ubuntu-latest
-    needs: shfmt
+    needs: shellcheck
     steps:
       - uses: actions/checkout@v4
       - uses: mig4/setup-bats@v1.2.0
