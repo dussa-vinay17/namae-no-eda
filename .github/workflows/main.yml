@@ -16,46 +16,46 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          submodules: true # initialize and update submodules
       - name: Run ShellCheck
         uses: ludeeus/action-shellcheck@2.0.0
+        with:
+          ignore_paths: >-
+            test/bats
+            test/test_helper
 
   tests:
     runs-on: ubuntu-latest
     needs: shellcheck
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          submodules: true # make sure test helpers are available
       - uses: mig4/setup-bats@v1.2.0
         with:
           bats-version: 1.2.1
-      - name: Run Bats tests
-        run: bats test/namae-no-eda.bats
+      - run: bats test/namae-no-eda.bats
 
   release:
     runs-on: ubuntu-latest
-    needs: tests
+    needs: [tests]
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          submodules: true
+
       - name: Setup git user
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
+
       - name: Install dependencies
         run: npm install
+
       - name: Run release-it
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
