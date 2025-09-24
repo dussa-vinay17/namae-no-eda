@@ -24,7 +24,8 @@ jobs:
     needs: shellcheck
     steps:
       - uses: mfinelli/setup-shfmt@v4
-      - run: shfmt -d bin/namae-no-eda.sh
+      - run: ls -R bin
+      - run: shfmt -d bin/*.sh
 
   tests:
     runs-on: ubuntu-latest
