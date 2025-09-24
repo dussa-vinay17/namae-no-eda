@@ -20,10 +20,26 @@ jobs:
       - name: Run ShellCheck
         uses: ludeeus/action-shellcheck@2.0.0
 
+  tests:
+    name: Bats Tests
+    runs-on: ubuntu-latest
+    needs: shellcheck
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm install
+      - name: Run Bats tests
+        run: test/bats/bin/bats test/namae-no-eda.bats
+
   release:
     name: Release
     runs-on: ubuntu-latest
-    needs: shellcheck
+    needs: [shellcheck, tests]
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     steps:
       - name: Checkout repository

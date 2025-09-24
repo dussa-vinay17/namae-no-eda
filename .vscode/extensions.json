@@ -24,6 +24,7 @@
     "foxundermoon.shell-format",
     "timonwong.shellcheck",
     "gruntfuggly.todo-tree",
-    "redhat.vscode-yaml"
+    "redhat.vscode-yaml",
+    "jetmartin.bats"
   ]
 }

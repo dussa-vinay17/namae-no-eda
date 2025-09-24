@@ -24,7 +24,8 @@
   "scripts": {
     "commit": "cz",
     "lint": "eslint --fix .",
-    "release": "release-it"
+    "release": "release-it",
+    "test": "test/bats/bin/bats test/namae-no-eda.bats"
   },
   "type": "module",
   "devDependencies": {

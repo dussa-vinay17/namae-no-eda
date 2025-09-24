@@ -78,7 +78,7 @@ validate_branch() {
     fi
   done
 
-  if in_array "$branch" "${exclude[@]}"; then
+  if glob_match_any "$branch" "${exclude[@]}"; then
     echo "[OK] ✅ Branch '$branch' is excluded from checks."
     echo "🌸 Quiet roots shelter forgotten branches."
     return 0
