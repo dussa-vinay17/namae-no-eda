@@ -1,5 +1,18 @@
 # Changelog
 
+## <small>0.2.1 (2025-09-24)</small>
+
+* ci: add checkout ([a2178a3](https://github.com/dcdavidev/namae-no-eda/commit/a2178a3))
+* ci: configure shellcheck ([4ea938f](https://github.com/dcdavidev/namae-no-eda/commit/4ea938f))
+* ci: edit shfmt flag ([a0cf9aa](https://github.com/dcdavidev/namae-no-eda/commit/a0cf9aa))
+* ci: fetch gitmodules ([88dfaa0](https://github.com/dcdavidev/namae-no-eda/commit/88dfaa0))
+* ci: fix shfmt job ([ce49634](https://github.com/dcdavidev/namae-no-eda/commit/ce49634))
+* ci: improve release workflow ([5c4097f](https://github.com/dcdavidev/namae-no-eda/commit/5c4097f))
+* ci: load git submodules ([8086fee](https://github.com/dcdavidev/namae-no-eda/commit/8086fee))
+* ci: remove name entry ([87d8a1b](https://github.com/dcdavidev/namae-no-eda/commit/87d8a1b))
+* ci: remove shfmt ([74748b7](https://github.com/dcdavidev/namae-no-eda/commit/74748b7))
+* fix: exclude glob, add tests ([0ad0e84](https://github.com/dcdavidev/namae-no-eda/commit/0ad0e84))
+
 ## 0.2.0 (2025-09-24)
 
 * feat: make `allowed` and `excude` options optional with some defaults ([eb2383c](https://github.com/dcdavidev/namae-no-eda/commit/eb2383c))
