@@ -28,6 +28,9 @@ jobs:
     needs: shellcheck
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: true
       - uses: mig4/setup-bats@v1.2.0
         with:
           bats-version: 1.2.1
