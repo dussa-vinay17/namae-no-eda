@@ -11,7 +11,11 @@
 
 ## Example
 
-This workflow validates branch names using `namae-no-eda`. Branches must match at least one allowed pattern, unless explicitly excluded.
+This workflow validates branch names using `namae-no-eda`.  
+By default it allows:  
+`feat/*, fix/*, chore/*, docs/*, refactor/*, test/*, perf/*`  
+and excludes:  
+`main, release/*`.
 
 ```yaml
 name: Branch Lint
@@ -32,16 +36,16 @@ jobs:
 
       - name: Validate branch name
         uses: dcdavidev/namae-no-eda@v0.0.1 # Check latest release first.
-        with:
-          allowed: 'fix/*,feature/*,release/*'
-          exclude: 'main,develop'
+        # with:
+        #   allowed: 'fix/*,feature/*,release/*' # Optional
+        #   exclude: 'main,develop' # Optional
 ```
 
 ## How it works
 
-- `allowed`: Comma-separated glob patterns that branch names must match.
-- `exclude`: Comma-separated exact branch names to bypass validation.
-- `branch_name` (optional): Defaults to the branch triggering the workflow; only override if you need to validate a specific branch.
+- **allowed** _(optional)_: Comma-separated glob patterns. Defaults to `feat/*,fix/*,chore/*,docs/*,refactor/*,test/*,perf/*`.
+- **exclude** _(optional)_: Comma-separated exact branch names. Defaults to `main,release/*`.
+- **branch_name** _(optional)_: Branch to check. Defaults to the branch that triggered the workflow.
 
 If the branch name does not match any allowed patterns and is not excluded, the action will fail the workflow.
 

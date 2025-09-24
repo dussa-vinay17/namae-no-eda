@@ -11,11 +11,11 @@ inputs:
     default: ${{ github.head_ref || github.ref_name }}
 
   allowed:
-    description: 'Comma-separated list of glob patterns that are allowed (e.g., fix/*,release/*). Branch passes if matched.'
-    required: true
+    description: 'Comma-separated list of glob patterns that are allowed (e.g., feat/*,fix/*). Defaults to feat/*,fix/*,chore/*,docs/*,refactor/*,test/*,perf/*.'
+    required: false
 
   exclude:
-    description: 'Comma-separated list of exact branch names to ignore (e.g., main, develop). Excluded branches bypass checks.'
+    description: 'Comma-separated list of exact branch names to ignore (e.g., main, develop). Defaults to main,release/*.'
     required: false
 
 runs:
