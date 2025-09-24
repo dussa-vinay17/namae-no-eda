@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.0 (2025-09-24)
+
+* feat: make `allowed` and `excude` options optional with some defaults ([eb2383c](https://github.com/dcdavidev/namae-no-eda/commit/eb2383c))
+
 ## <small>0.1.2 (2025-09-23)</small>
 
 * ci: edit action ([6f5a84e](https://github.com/dcdavidev/namae-no-eda/commit/6f5a84e))
